@@ -136,5 +136,12 @@
       <Name>Entity</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Emojis\iconfinder_12_3561845.png" />
+    <Content Include="Emojis\iconfinder_13_3561846.png" />
+    <Content Include="Emojis\iconfinder_14_3561847.png" />
+    <Content Include="Emojis\iconfinder_24_3561857.png" />
+    <Content Include="Emojis\iconfinder_4_3561839.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
