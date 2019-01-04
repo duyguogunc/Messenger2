@@ -43,14 +43,15 @@ namespace BLL
             Conn.Close();
             Conn.Dispose();
         }
-        public bool StateProc(string proc)
+        public bool StateProc(string proc, params SqlParameter[] p1)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = proc;
             cmd.Connection = Conn;
+            cmd.Parameters.AddRange(p1);
             Conn.Open();
-            bool state = cmd.ExecuteNonQuery() > 0 ? true : false;
+            bool state = (bool)cmd.ExecuteScalar();
             Conn.Close();
             return state;
         }
