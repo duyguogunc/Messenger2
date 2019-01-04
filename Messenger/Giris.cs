@@ -26,7 +26,15 @@ namespace Messenger
             u.Password = txt_sifre.Text;
             UserManage us = new UserManage();
             us.SignIn(u);
-            new Form1().Show();
+            if (us.SignIn(u)==true)
+            {
+                new Form1().Show();
+            }
+            else
+            {
+                MessageBox.Show("Bilgilerinizi kontrol ediniz.");
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
