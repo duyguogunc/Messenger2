@@ -26,13 +26,21 @@ namespace Messenger
             m.User = Program.User;
             mm.InsertMessage(m);
 
-            
-            
+
+
         }
 
         private void rch_GelenYazi_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            BLL.UserManage BLL = new BLL.UserManage();
+            lst_KisiListesi.DisplayMember = "Name";
+            lst_KisiListesi.ValueMember = "UserName";
+            lst_KisiListesi.DataSource = BLL.ActiveUsers();
         }
     }
 }
