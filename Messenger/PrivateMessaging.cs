@@ -25,11 +25,13 @@ namespace Messenger
         }
         private void btn_Emoji_Click(object sender, EventArgs e)
         {
+            flp_Emoji.Visible = true;
            string[] emoji= Directory.GetFiles("Resources\\Emojis");
             foreach (var item in emoji)
             {
                 PictureBox p = new PictureBox();
                 p.ImageLocation = item;
+                p.SizeMode = PictureBoxSizeMode.StretchImage;
                 p.Size = new Size(20, 20);
                 flp_Emoji.Controls.Add(p);
             }

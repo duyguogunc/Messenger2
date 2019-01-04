@@ -50,6 +50,7 @@
             this.lst_KisiListesi.FormattingEnabled = true;
             resources.ApplyResources(this.lst_KisiListesi, "lst_KisiListesi");
             this.lst_KisiListesi.Name = "lst_KisiListesi";
+            this.lst_KisiListesi.SelectedIndexChanged += new System.EventHandler(this.lst_KisiListesi_SelectedIndexChanged);
             // 
             // rch_GidenYazi
             // 

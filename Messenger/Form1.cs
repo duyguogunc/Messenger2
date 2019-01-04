@@ -56,5 +56,10 @@ namespace Messenger
             lst_KisiListesi.ValueMember = "UserName";
             lst_KisiListesi.DataSource = BLL.ActiveUsers();
         }
+
+        private void lst_KisiListesi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            new PrivateMessaging().Show();
+        }
     }
 }
