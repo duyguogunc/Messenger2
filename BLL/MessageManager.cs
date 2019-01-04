@@ -34,7 +34,7 @@ namespace BLL
         {
             SqlParameter p1 = new SqlParameter("Message", msg.Content);
             SqlParameter p2 = new SqlParameter("Date", msg.SendDate);
-            SqlParameter p3 = new SqlParameter("SenderUser", msg.User);
+            SqlParameter p3 = new SqlParameter("SenderUser", msg.User.UserName);
             SqlParameter p4 = new SqlParameter("ReciverUser", msg.ReciverUsers);
 
             sql.ExecuteProc("SendingMessage", p1, p2, p3, p4);
