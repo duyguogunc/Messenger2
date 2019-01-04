@@ -165,19 +165,19 @@
     <value>Registrieren</value>
   </data>
   <data name="tÜRKÇEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 26</value>
+    <value>216, 26</value>
   </data>
   <data name="tÜRKÇEToolStripMenuItem.Text" xml:space="preserve">
     <value>TÜRKISH</value>
   </data>
   <data name="iNGİLİZCEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 26</value>
+    <value>216, 26</value>
   </data>
   <data name="iNGİLİZCEToolStripMenuItem.Text" xml:space="preserve">
     <value>ENGLISCH</value>
   </data>
   <data name="aLMANCAToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 26</value>
+    <value>216, 26</value>
   </data>
   <data name="aLMANCAToolStripMenuItem.Text" xml:space="preserve">
     <value>DEUTSCH</value>

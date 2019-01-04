@@ -30,5 +30,10 @@ namespace Messenger
             us.SignUp(u);
             
         }
+
+        private void KayitOl_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
