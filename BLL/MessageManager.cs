@@ -39,5 +39,6 @@ namespace BLL
 
             sql.ExecuteProc("SendingMessage", p1, p2, p3, p4);
         }
+
     }
 }
