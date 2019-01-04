@@ -50,7 +50,7 @@ namespace BLL
             cmd.CommandText = proc;
             cmd.Connection = Conn;
             Conn.Open();
-            bool state = cmd.ExecuteNonQuery() > 0 ? true : false;
+            bool state = (bool)cmd.ExecuteScalar();
             Conn.Close();
             return state;
         }
