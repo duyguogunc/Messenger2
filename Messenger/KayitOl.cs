@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Messenger
 {
-    public partial class Giris : Form
+    public partial class KayitOl : Form
     {
-        public Giris()
+        public KayitOl()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new Form1().Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            new KayitOl().Show();
         }
     }
 }

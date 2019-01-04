@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_kullaniciadi = new System.Windows.Forms.Label();
             this.pic_kullaniciresim = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic_kullaniciresim)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,12 +102,23 @@
             this.pic_kullaniciresim.TabIndex = 8;
             this.pic_kullaniciresim.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(162, 531);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(103, 37);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Kayıt Ol";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Giris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(397, 600);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.chc_BeniHatirla);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_sifre);
@@ -132,5 +144,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_kullaniciadi;
         private System.Windows.Forms.PictureBox pic_kullaniciresim;
+        private System.Windows.Forms.Button button2;
     }
 }
