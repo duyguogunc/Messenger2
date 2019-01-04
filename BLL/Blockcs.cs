@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entity.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,15 @@ namespace BLL
 {
     public partial class Blockcs : Form
     {
+        MessageManager msgmanager = new MessageManager();
         public Blockcs()
         {
             InitializeComponent();
         }
-
+        
         private void Blockcs_Load(object sender, EventArgs e)
         {
-
+            listBoxBlock.DataSource = msgmanager.GetUsers();
         }
     }
 }

@@ -62,5 +62,6 @@ namespace Messenger
             this.Controls.Clear();
             InitializeComponent();
         }
+        
     }
 }
