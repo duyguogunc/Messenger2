@@ -19,5 +19,19 @@ namespace BLL
             SqlParameter p4 = new SqlParameter("Password", newUser.Password);
             sqlHelper.ExecuteProc("UserSignUp", p1, p2, p3, p4);
         }
+        
+        public void SignIn(User user)
+        {
+            SqlParameter p1 = new SqlParameter("UserName", user.UserName);
+            SqlParameter p2 = new SqlParameter("Password", user.Password);
+            sqlHelper.ExecuteProc("SignIn", p1, p2);
+        }
+        public void SignOut(User user)
+        {
+            SqlParameter p1 = new SqlParameter("UserName", user.UserName);           
+            SqlParameter p2 = new SqlParameter("Password", user.Password);
+            sqlHelper.ExecuteProc("SignOut", p1, p2);
+        }
+
     }
 }
