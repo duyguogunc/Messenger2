@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,7 @@ namespace BLL
         public List<Message> GetMessage()
         {
             List<Message> messageList = new List<Message>();
-            DataTable dt = sql.GetAllMessage();
+            DataTable dt = sql.GetAllMessage("Select * From Messages");
             foreach (DataRow item in dt.Rows)
             {
                 Message message = new Message();
@@ -31,7 +32,12 @@ namespace BLL
 
         public void InsertMessage(Message msg)
         {
+            SqlParameter p1 = new SqlParameter("Message", msg.Content);
+            SqlParameter p2 = new SqlParameter("Date", msg.SendDate);
+            SqlParameter p3 = new SqlParameter("SenderUser", msg.User);
+            SqlParameter p4 = new SqlParameter("ReciverUser", msg.ReciverUsers);
 
+            sql.ExecuteProc("SendingMessage", p1, p2, p3, p4);
         }
     }
 }
