@@ -43,6 +43,17 @@ namespace BLL
             Conn.Close();
             Conn.Dispose();
         }
+        public bool StateProc(string proc)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = proc;
+            cmd.Connection = Conn;
+            Conn.Open();
+            bool state = cmd.ExecuteNonQuery() > 0 ? true : false;
+            Conn.Close();
+            return state;
+        }
         public DataTable GetAllMessage(string proc)
         {
             DataTable dt = new DataTable();
