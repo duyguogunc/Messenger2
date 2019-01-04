@@ -34,7 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txt_Ad = new System.Windows.Forms.TextBox();
             this.txt_soyad = new System.Windows.Forms.TextBox();
-            this.txt_eposta = new System.Windows.Forms.TextBox();
+            this.txt_KullaniciAdi1 = new System.Windows.Forms.TextBox();
             this.txt_sifre = new System.Windows.Forms.TextBox();
             this.btn_kaydol = new System.Windows.Forms.Button();
             this.rd_kadin = new System.Windows.Forms.RadioButton();
@@ -73,9 +73,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(31, 119);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 18);
+            this.label3.Size = new System.Drawing.Size(104, 18);
             this.label3.TabIndex = 10;
-            this.label3.Text = "E-Posta Adresiniz:";
+            this.label3.Text = "Kullanıcı Adı:";
             // 
             // label4
             // 
@@ -101,12 +101,12 @@
             this.txt_soyad.Size = new System.Drawing.Size(170, 22);
             this.txt_soyad.TabIndex = 1;
             // 
-            // txt_eposta
+            // txt_KullaniciAdi1
             // 
-            this.txt_eposta.Location = new System.Drawing.Point(195, 115);
-            this.txt_eposta.Name = "txt_eposta";
-            this.txt_eposta.Size = new System.Drawing.Size(170, 22);
-            this.txt_eposta.TabIndex = 2;
+            this.txt_KullaniciAdi1.Location = new System.Drawing.Point(195, 115);
+            this.txt_KullaniciAdi1.Name = "txt_KullaniciAdi1";
+            this.txt_KullaniciAdi1.Size = new System.Drawing.Size(170, 22);
+            this.txt_KullaniciAdi1.TabIndex = 2;
             // 
             // txt_sifre
             // 
@@ -213,7 +213,7 @@
             this.Controls.Add(this.btn_kaydol);
             this.Controls.Add(this.txt_sifretekrar);
             this.Controls.Add(this.txt_sifre);
-            this.Controls.Add(this.txt_eposta);
+            this.Controls.Add(this.txt_KullaniciAdi1);
             this.Controls.Add(this.txt_soyad);
             this.Controls.Add(this.txt_Ad);
             this.Controls.Add(this.label5);
@@ -237,7 +237,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_Ad;
         private System.Windows.Forms.TextBox txt_soyad;
-        private System.Windows.Forms.TextBox txt_eposta;
+        private System.Windows.Forms.TextBox txt_KullaniciAdi1;
         private System.Windows.Forms.TextBox txt_sifre;
         private System.Windows.Forms.Button btn_kaydol;
         private System.Windows.Forms.RadioButton rd_kadin;
