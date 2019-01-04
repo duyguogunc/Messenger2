@@ -32,10 +32,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lst_KisiListesi = new System.Windows.Forms.ListBox();
             this.rch_GidenYazi = new System.Windows.Forms.RichTextBox();
-            this.rch_GelenYazi = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Gonder = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,15 +67,6 @@
             this.rch_GidenYazi.TabIndex = 7;
             this.rch_GidenYazi.Text = "";
             // 
-            // rch_GelenYazi
-            // 
-            this.rch_GelenYazi.Location = new System.Drawing.Point(236, 53);
-            this.rch_GelenYazi.Name = "rch_GelenYazi";
-            this.rch_GelenYazi.Size = new System.Drawing.Size(585, 265);
-            this.rch_GelenYazi.TabIndex = 6;
-            this.rch_GelenYazi.Text = "";
-            this.rch_GelenYazi.TextChanged += new System.EventHandler(this.rch_GelenYazi_TextChanged);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Messenger.Properties.Resources.personal;
@@ -101,22 +92,36 @@
             this.btn_Gonder.UseVisualStyleBackColor = false;
             this.btn_Gonder.Click += new System.EventHandler(this.btn_Gonder_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(236, 53);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(585, 286);
+            this.flowLayoutPanel1.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(837, 549);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lst_KisiListesi);
             this.Controls.Add(this.btn_Gonder);
             this.Controls.Add(this.rch_GidenYazi);
-            this.Controls.Add(this.rch_GelenYazi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Unterhaltung";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -130,8 +135,8 @@
         private System.Windows.Forms.ListBox lst_KisiListesi;
         private System.Windows.Forms.Button btn_Gonder;
         private System.Windows.Forms.RichTextBox rch_GidenYazi;
-        private System.Windows.Forms.RichTextBox rch_GelenYazi;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 
