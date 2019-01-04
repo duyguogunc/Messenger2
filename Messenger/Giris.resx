@@ -123,10 +123,14 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="chc_BeniHatirla.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 408</value>
+    <value>50, 332</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chc_BeniHatirla.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="chc_BeniHatirla.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 21</value>
+    <value>80, 17</value>
   </data>
   <data name="chc_BeniHatirla.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -144,16 +148,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chc_BeniHatirla.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 479</value>
+    <value>122, 389</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 37</value>
+    <value>77, 30</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -171,16 +178,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="txt_sifre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 363</value>
+    <value>50, 295</value>
+  </data>
+  <data name="txt_sifre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="txt_sifre.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="txt_sifre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 22</value>
+    <value>200, 20</value>
   </data>
   <data name="txt_sifre.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -195,13 +205,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_sifre.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="txt_KullaniciAdi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 296</value>
+    <value>50, 240</value>
+  </data>
+  <data name="txt_KullaniciAdi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="txt_KullaniciAdi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 22</value>
+    <value>200, 20</value>
   </data>
   <data name="txt_KullaniciAdi.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -216,16 +229,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_KullaniciAdi.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 334</value>
+    <value>48, 271</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 17</value>
+    <value>40, 13</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -243,16 +259,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="lbl_kullaniciadi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lbl_kullaniciadi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 261</value>
+    <value>48, 212</value>
+  </data>
+  <data name="lbl_kullaniciadi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="lbl_kullaniciadi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 17</value>
+    <value>67, 13</value>
   </data>
   <data name="lbl_kullaniciadi.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -270,16 +289,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbl_kullaniciadi.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 522</value>
+    <value>122, 424</value>
+  </data>
+  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 37</value>
+    <value>77, 30</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -297,31 +319,31 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="tÜRKÇEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 26</value>
+    <value>132, 22</value>
   </data>
   <data name="tÜRKÇEToolStripMenuItem.Text" xml:space="preserve">
     <value>TÜRKÇE</value>
   </data>
   <data name="iNGİLİZCEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 26</value>
+    <value>132, 22</value>
   </data>
   <data name="iNGİLİZCEToolStripMenuItem.Text" xml:space="preserve">
     <value>INGILIZCE</value>
   </data>
   <data name="aLMANCAToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 26</value>
+    <value>132, 22</value>
   </data>
   <data name="aLMANCAToolStripMenuItem.Text" xml:space="preserve">
     <value>ALMANCA</value>
   </data>
   <data name="dİLToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 24</value>
+    <value>36, 20</value>
   </data>
   <data name="dİLToolStripMenuItem.Text" xml:space="preserve">
     <value>DİL</value>
@@ -329,8 +351,11 @@
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 2, 0, 2</value>
+  </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>397, 28</value>
+    <value>298, 24</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -348,17 +373,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pic_kullaniciresim.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
   <data name="pic_kullaniciresim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 85</value>
+    <value>101, 69</value>
+  </data>
+  <data name="pic_kullaniciresim.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="pic_kullaniciresim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 137</value>
+    <value>107, 111</value>
   </data>
   <data name="pic_kullaniciresim.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -373,16 +400,46 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pic_kullaniciresim.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 459</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>397, 600</value>
+    <value>298, 488</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Giris</value>

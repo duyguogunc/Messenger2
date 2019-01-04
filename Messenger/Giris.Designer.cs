@@ -42,6 +42,7 @@
             this.iNGİLİZCEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aLMANCAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pic_kullaniciresim = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_kullaniciresim)).BeginInit();
             this.SuspendLayout();
@@ -128,11 +129,19 @@
             this.pic_kullaniciresim.Name = "pic_kullaniciresim";
             this.pic_kullaniciresim.TabStop = false;
             // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Giris
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.chc_BeniHatirla);
             this.Controls.Add(this.button1);
@@ -168,5 +177,6 @@
         private System.Windows.Forms.ToolStripMenuItem tÜRKÇEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iNGİLİZCEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aLMANCAToolStripMenuItem;
+        private System.Windows.Forms.Button button3;
     }
 }

@@ -62,6 +62,10 @@ namespace Messenger
             this.Controls.Clear();
             InitializeComponent();
         }
-        
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new Blockcs().Show();
+        }
     }
 }
