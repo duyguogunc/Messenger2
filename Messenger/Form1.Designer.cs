@@ -33,10 +33,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lst_KisiListesi = new System.Windows.Forms.ListBox();
             this.rch_GidenYazi = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_Gonder = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_Gonder = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +56,17 @@
             resources.ApplyResources(this.rch_GidenYazi, "rch_GidenYazi");
             this.rch_GidenYazi.Name = "rch_GidenYazi";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // flowLayoutPanel1
+            // 
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Messenger.Properties.Resources.personal;
@@ -71,17 +82,6 @@
             this.btn_Gonder.Name = "btn_Gonder";
             this.btn_Gonder.UseVisualStyleBackColor = false;
             this.btn_Gonder.Click += new System.EventHandler(this.btn_Gonder_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 500;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // flowLayoutPanel1
-            // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // Form1
             // 
