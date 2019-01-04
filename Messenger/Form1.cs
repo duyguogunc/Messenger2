@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entity.Models;
 
 namespace Messenger
 {
@@ -36,21 +37,27 @@ namespace Messenger
             var gelen = mm.GetMessage();
 
             foreach (var item in gelen)
-            {
-                Label l = new Label();
-                l.Text = item.Content;
-                Label l1 = new Label();
-                l1.Text = item.User.UserName;
-                Label l2 = new Label();
-                l2.Text = item.SendDate.ToShortTimeString();
-                flowLayoutPanel1.Controls.Add(l1);
-                flowLayoutPanel1.SetFlowBreak(l1,true);
-                flowLayoutPanel1.Controls.Add(l);
-                flowLayoutPanel1.SetFlowBreak(l, true);
-                flowLayoutPanel1.Controls.Add(l2);
+                ShowMessage(item);
 
-            }
-           
+        }
+
+        private void ShowMessage(Entity.Models.Message item)
+        {
+            Label l_msg = new Label();
+            l_msg.Text = item.Content;
+
+            Label l_username = new Label();
+            l_username.Text = item.User.UserName;
+            l_username.Font = new Font(FontFamily.GenericMonospace, 12, FontStyle.Bold);
+
+            Label l_time = new Label();
+            l_time.Text = item.SendDate.ToShortTimeString();
+
+            flowLayoutPanel1.Controls.Add(l_username);
+            flowLayoutPanel1.Controls.Add(l_time);
+            flowLayoutPanel1.SetFlowBreak(l_time, true);
+            flowLayoutPanel1.Controls.Add(l_msg);
+            flowLayoutPanel1.SetFlowBreak(l_msg, true);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -68,7 +75,11 @@ namespace Messenger
 
         private void lst_KisiListesi_SelectedIndexChanged(object sender, EventArgs e)
         {
-            new PrivateMessaging().Show();
+            if (lst_KisiListesi.SelectedItem != null) {
+                PrivateMessaging pform = new PrivateMessaging();
+                var kisi = ((User)lst_KisiListesi.SelectedItem);
+                pform.Text = kisi.Name + " " + kisi.Surname + " (" + kisi.UserName + ")";
+            }
         }
     }
 }
