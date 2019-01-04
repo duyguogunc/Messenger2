@@ -19,16 +19,20 @@ namespace BLL
         {
             List<Message> messageList = new List<Message>();
             DataTable dt = sql.GetAllMessage("Select * From Messages");
-            
+
             foreach (DataRow item in dt.Rows)
             {
                 Message message = new Message();
-                message.Content = item["Message"].ToString();
-                message.User.UserName = item["SenderUser"].ToString();
-                message.SendDate = (DateTime)item["Date"];
-                message.MessageId = (int)item["MessageID"];
+                message.User = new User();
+                if (message.User.IsBlocked == false)
+                {
+                    message.Content = item["Message"].ToString();
+                    message.User.UserName = item["SenderUser"].ToString();
+                    message.SendDate = (DateTime)item["Date"];
+                    message.MessageId = (int)item["MessageID"];
 
-                messageList.Add(message);
+                    messageList.Add(message);
+                }
             }
             return messageList;
         }
@@ -46,8 +50,26 @@ namespace BLL
         {
             JavaScriptSerializer jss = new JavaScriptSerializer();
             string json = jss.Serialize(GetMessage());
-            File.WriteAllText("messages.json",json);
+            File.WriteAllText("messages.json", json);
         }
-    
+
+        public List<User> GetUsers()
+        {
+            List<User> userList = new List<User>();
+            DataTable dt = sql.GetAllMessage("Select * From Users");
+            foreach (DataRow item in dt.Rows)
+            {
+                User user = new User();
+                user.Name = item["Name"].ToString();
+                user.Surname = item["SurName"].ToString();
+                user.Password = item["Password"].ToString();
+                user.ImageAddress = item["ImageAdress"].ToString();
+                user.IsBlocked = (bool)item["IsBlock"];
+                user.Activity = (bool)item["IsActive"];
+
+                userList.Add(user);
+            }
+            return userList;
+        }
     }
 }
