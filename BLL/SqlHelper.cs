@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Entity.Models;
 
 namespace BLL
 {
@@ -23,11 +23,7 @@ namespace BLL
             conn=new SqlConnection(connetionString);
         }
 
-        public string sendMessage()
-        {
-
-        }
-        public List<>
+      
        
     }
 }
