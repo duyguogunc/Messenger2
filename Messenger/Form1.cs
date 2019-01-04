@@ -26,6 +26,7 @@ namespace Messenger
             m.Content = rch_GidenYazi.Text;
             m.User = Program.User;
             mm.InsertMessage(m);
+            rch_GidenYazi.Clear();
 
 
 
@@ -39,9 +40,15 @@ namespace Messenger
             {
                 Label l = new Label();
                 l.Text = item.Content;
+                Label l1 = new Label();
+                l1.Text = item.User.UserName;
+                flowLayoutPanel1.Controls.Add(l1);
+                flowLayoutPanel1.SetFlowBreak(l1,true);
                 flowLayoutPanel1.Controls.Add(l);
+                flowLayoutPanel1.SetFlowBreak(l, true);
 
             }
+           
         }
 
         private void timer1_Tick(object sender, EventArgs e)
