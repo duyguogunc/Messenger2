@@ -50,6 +50,7 @@
             this.lst_KisiListesi.FormattingEnabled = true;
             resources.ApplyResources(this.lst_KisiListesi, "lst_KisiListesi");
             this.lst_KisiListesi.Name = "lst_KisiListesi";
+            this.lst_KisiListesi.SelectedIndexChanged += new System.EventHandler(this.lst_KisiListesi_SelectedIndexChanged);
             // 
             // rch_GidenYazi
             // 
@@ -59,12 +60,14 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 500;
+            this.timer1.Interval = 2000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // flowLayoutPanel1
             // 
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // pictureBox1
