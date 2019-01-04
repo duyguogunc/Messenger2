@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entity.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,7 +8,7 @@ using System.Windows.Forms;
 namespace Messenger
 {
     static class Program
-    {
+    { 
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -18,5 +19,6 @@ namespace Messenger
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Giris());
         }
+        public static User User { get; set; }
     }
 }

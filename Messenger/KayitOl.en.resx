@@ -132,81 +132,81 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 18</value>
+    <value>80, 18</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Nachnamen</value>
+    <value>Surname:</value>
   </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 18</value>
+    <value>98, 18</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Benutzername:</value>
+    <value>User Name:</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 18</value>
+    <value>88, 18</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Kennwort:</value>
+    <value>Password:</value>
   </data>
   <data name="btn_kaydol.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btn_kaydol.Text" xml:space="preserve">
-    <value>Registrieren</value>
+    <value>Register</value>
   </data>
   <data name="rd_kadin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="rd_kadin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 21</value>
+    <value>75, 21</value>
   </data>
   <data name="rd_kadin.Text" xml:space="preserve">
-    <value>Frau</value>
+    <value>Female</value>
   </data>
   <data name="rd_erkek.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="rd_erkek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
+    <value>59, 21</value>
   </data>
   <data name="rd_erkek.Text" xml:space="preserve">
-    <value>Mann</value>
+    <value>Male</value>
   </data>
   <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 18</value>
+    <value>68, 18</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>Geschlecht:</value>
+    <value>Gender:</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 18</value>
+    <value>134, 18</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Passwort Erneut:</value>
+    <value>Password Again:</value>
   </data>
   <data name="btn_fotosec.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btn_fotosec.Text" xml:space="preserve">
-    <value>Foto Auswählen</value>
+    <value>Choose Foto</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Registrieren</value>
+    <value>Register</value>
   </data>
 </root>

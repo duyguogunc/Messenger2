@@ -91,6 +91,9 @@
     <EmbeddedResource Include="Giris.resx">
       <DependentUpon>Giris.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KayitOl.de.resx">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KayitOl.en.resx">
       <DependentUpon>KayitOl.cs</DependentUpon>
     </EmbeddedResource>

@@ -14,5 +14,7 @@ namespace Entity.Models
         public string Password { get; set; }
         public string ImageAddress { get; set; }
         public bool Activity { get; set; }
+        public bool IsBlocked { get; set; }
+        public DateTime LastMessage { get; set; }
     }
 }
