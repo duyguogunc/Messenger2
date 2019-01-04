@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Entity.Models
 {
-    class Message
+    public class Message
     {
         public DateTime SendDate { get; set; }
-        public string Content { get; set; }       
+        public string Content { get; set; }
         public User User { get; set; }
         public Message()
         {
