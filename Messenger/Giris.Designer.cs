@@ -31,12 +31,18 @@
             this.chc_BeniHatirla = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txt_sifre = new System.Windows.Forms.TextBox();
-            this.txt_eposta = new System.Windows.Forms.TextBox();
+            this.txt_KullaniciAdi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_kullaniciadi = new System.Windows.Forms.Label();
             this.pic_kullaniciresim = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.dİLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tÜRKÇEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iNGİLİZCEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aLMANCAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pic_kullaniciresim)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // chc_BeniHatirla
@@ -68,12 +74,12 @@
             this.txt_sifre.Size = new System.Drawing.Size(266, 22);
             this.txt_sifre.TabIndex = 12;
             // 
-            // txt_eposta
+            // txt_KullaniciAdi
             // 
-            this.txt_eposta.Location = new System.Drawing.Point(67, 296);
-            this.txt_eposta.Name = "txt_eposta";
-            this.txt_eposta.Size = new System.Drawing.Size(266, 22);
-            this.txt_eposta.TabIndex = 11;
+            this.txt_KullaniciAdi.Location = new System.Drawing.Point(67, 296);
+            this.txt_KullaniciAdi.Name = "txt_KullaniciAdi";
+            this.txt_KullaniciAdi.Size = new System.Drawing.Size(266, 22);
+            this.txt_KullaniciAdi.TabIndex = 11;
             // 
             // label2
             // 
@@ -106,13 +112,52 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(162, 531);
+            this.button2.Location = new System.Drawing.Point(162, 522);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 37);
             this.button2.TabIndex = 15;
             this.button2.Text = "Kayıt Ol";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dİLToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(397, 28);
+            this.menuStrip1.TabIndex = 16;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // dİLToolStripMenuItem
+            // 
+            this.dİLToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tÜRKÇEToolStripMenuItem,
+            this.iNGİLİZCEToolStripMenuItem,
+            this.aLMANCAToolStripMenuItem});
+            this.dİLToolStripMenuItem.Name = "dİLToolStripMenuItem";
+            this.dİLToolStripMenuItem.Size = new System.Drawing.Size(43, 24);
+            this.dİLToolStripMenuItem.Text = "DİL";
+            // 
+            // tÜRKÇEToolStripMenuItem
+            // 
+            this.tÜRKÇEToolStripMenuItem.Name = "tÜRKÇEToolStripMenuItem";
+            this.tÜRKÇEToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.tÜRKÇEToolStripMenuItem.Text = "TÜRKÇE";
+            // 
+            // iNGİLİZCEToolStripMenuItem
+            // 
+            this.iNGİLİZCEToolStripMenuItem.Name = "iNGİLİZCEToolStripMenuItem";
+            this.iNGİLİZCEToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.iNGİLİZCEToolStripMenuItem.Text = "İNGİLİZCE";
+            // 
+            // aLMANCAToolStripMenuItem
+            // 
+            this.aLMANCAToolStripMenuItem.Name = "aLMANCAToolStripMenuItem";
+            this.aLMANCAToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.aLMANCAToolStripMenuItem.Text = "ALMANCA";
             // 
             // Giris
             // 
@@ -124,14 +169,18 @@
             this.Controls.Add(this.chc_BeniHatirla);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_sifre);
-            this.Controls.Add(this.txt_eposta);
+            this.Controls.Add(this.txt_KullaniciAdi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_kullaniciadi);
             this.Controls.Add(this.pic_kullaniciresim);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Giris";
             this.Text = "Giris";
             ((System.ComponentModel.ISupportInitialize)(this.pic_kullaniciresim)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,10 +191,15 @@
         private System.Windows.Forms.CheckBox chc_BeniHatirla;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txt_sifre;
-        private System.Windows.Forms.TextBox txt_eposta;
+        private System.Windows.Forms.TextBox txt_KullaniciAdi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_kullaniciadi;
         private System.Windows.Forms.PictureBox pic_kullaniciresim;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem dİLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tÜRKÇEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iNGİLİZCEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aLMANCAToolStripMenuItem;
     }
 }

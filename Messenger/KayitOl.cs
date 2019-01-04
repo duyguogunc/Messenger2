@@ -25,7 +25,8 @@ namespace Messenger
             UserManage us = new UserManage();
             u.Name = txt_Ad.Text;
             u.Surname = txt_soyad.Text;
-            u.Password = txt_sifre.Text; 
+            u.Password = txt_sifre.Text;
+            u.UserName = txt_KullaniciAdi1.Text;
             us.SignUp(u);
             
         }
