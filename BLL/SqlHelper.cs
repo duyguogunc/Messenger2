@@ -51,7 +51,7 @@ namespace BLL
             cmd.Connection = Conn;
             cmd.Parameters.AddRange(p1);
             Conn.Open();
-            bool state = (bool)cmd.ExecuteScalar();
+            bool state = (int)cmd.ExecuteScalar() ==1;
             Conn.Close();
             return state;
         }
