@@ -10,13 +10,14 @@ namespace BLL
 {
     public class UserManage
     {
-        public void SıgnUp(User newUser)
+        SqlHelper sqlHelper = new SqlHelper();
+        public void SignUp(User newUser)
         {
             SqlParameter p1 = new SqlParameter("UserName", newUser.UserName);
             SqlParameter p2 = new SqlParameter("Name", newUser.Name);
             SqlParameter p3 = new SqlParameter("SurName", newUser.Surname);
             SqlParameter p4 = new SqlParameter("Password", newUser.Password);
-
+            sqlHelper.ExecuteProc("UserSignUp", p1, p2, p3, p4);
         }
     }
 }
