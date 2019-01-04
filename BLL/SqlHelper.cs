@@ -17,7 +17,7 @@ namespace BLL
         {
             connetionString =
                 @"Data Source =185.23.75.48,8081\SQLEXPRESS;
-                Initial Catalog=WissenMM;
+                Initial Catalog=MessengerDB;
                 User ID=wissen302;
                 Password=123456";
             conn = new SqlConnection(connetionString);
