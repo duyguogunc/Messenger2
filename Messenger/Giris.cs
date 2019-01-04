@@ -25,9 +25,9 @@ namespace Messenger
             u.UserName = txt_KullaniciAdi.Text;
             u.Password = txt_sifre.Text;
             UserManage us = new UserManage();
-            us.SignIn(u);
             if (us.SignIn(u)==true)
             {
+                Program.User = u;
                 new Form1().Show();
             }
             else
