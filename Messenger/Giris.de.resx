@@ -118,19 +118,80 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="chc_BeniHatirla.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Online Contacts</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chc_BeniHatirla.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 21</value>
   </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="chc_BeniHatirla.Text" xml:space="preserve">
+    <value>Erinnere Dich An Mich</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_Gonder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 37</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Anmelden</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 17</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Kennwort:</value>
+  </data>
+  <data name="lbl_kullaniciadi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_kullaniciadi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 17</value>
+  </data>
+  <data name="lbl_kullaniciadi.Text" xml:space="preserve">
+    <value>Benutzername:</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 37</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Registrieren</value>
+  </data>
+  <data name="tÜRKÇEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 26</value>
+  </data>
+  <data name="tÜRKÇEToolStripMenuItem.Text" xml:space="preserve">
+    <value>TÜRKISH</value>
+  </data>
+  <data name="iNGİLİZCEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 26</value>
+  </data>
+  <data name="iNGİLİZCEToolStripMenuItem.Text" xml:space="preserve">
+    <value>ENGLISCH</value>
+  </data>
+  <data name="aLMANCAToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 26</value>
+  </data>
+  <data name="aLMANCAToolStripMenuItem.Text" xml:space="preserve">
+    <value>DEUTSCH</value>
+  </data>
+  <data name="dİLToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 24</value>
+  </data>
+  <data name="dİLToolStripMenuItem.Text" xml:space="preserve">
+    <value>SPRACHE</value>
+  </data>
+  <data name="pic_kullaniciresim.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Chat</value>
+    <value>Eintrag</value>
   </data>
 </root>
