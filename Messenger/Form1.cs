@@ -28,9 +28,8 @@ namespace Messenger
             mm.InsertMessage(m);
             rch_GidenYazi.Clear();
 
-
-
         }
+
         public void GetMessage()
         {
             flowLayoutPanel1.Controls.Clear();
@@ -42,10 +41,13 @@ namespace Messenger
                 l.Text = item.Content;
                 Label l1 = new Label();
                 l1.Text = item.User.UserName;
+                Label l2 = new Label();
+                l2.Text = item.SendDate.ToShortTimeString();
                 flowLayoutPanel1.Controls.Add(l1);
                 flowLayoutPanel1.SetFlowBreak(l1,true);
                 flowLayoutPanel1.Controls.Add(l);
                 flowLayoutPanel1.SetFlowBreak(l, true);
+                flowLayoutPanel1.Controls.Add(l2);
 
             }
            
