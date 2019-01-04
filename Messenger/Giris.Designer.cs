@@ -112,7 +112,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(162, 531);
+            this.button2.Location = new System.Drawing.Point(162, 522);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 37);
             this.button2.TabIndex = 15;
@@ -144,19 +144,19 @@
             // tÜRKÇEToolStripMenuItem
             // 
             this.tÜRKÇEToolStripMenuItem.Name = "tÜRKÇEToolStripMenuItem";
-            this.tÜRKÇEToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.tÜRKÇEToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.tÜRKÇEToolStripMenuItem.Text = "TÜRKÇE";
             // 
             // iNGİLİZCEToolStripMenuItem
             // 
             this.iNGİLİZCEToolStripMenuItem.Name = "iNGİLİZCEToolStripMenuItem";
-            this.iNGİLİZCEToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.iNGİLİZCEToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.iNGİLİZCEToolStripMenuItem.Text = "İNGİLİZCE";
             // 
             // aLMANCAToolStripMenuItem
             // 
             this.aLMANCAToolStripMenuItem.Name = "aLMANCAToolStripMenuItem";
-            this.aLMANCAToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.aLMANCAToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.aLMANCAToolStripMenuItem.Text = "ALMANCA";
             // 
             // Giris

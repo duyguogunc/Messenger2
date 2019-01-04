@@ -23,7 +23,7 @@ namespace Messenger
         {
             CultureInfo.CurrentCulture = new CultureInfo(lang.ToString());
             CultureInfo.CurrentUICulture = new CultureInfo(lang.ToString());
-            CultureInfo.CurrentUICulture = new CultureInfo(lang.ToString())
+            CultureInfo.CurrentUICulture = new CultureInfo(lang.ToString());
 
             var json = jss.Serialize(lang);
             File.WriteAllText("setting.json", json);
@@ -41,7 +41,7 @@ namespace Messenger
             }
             CultureInfo.CurrentCulture = new CultureInfo(lang.ToString());
             CultureInfo.CurrentUICulture = new CultureInfo(lang.ToString());
-            CultureInfo.CurrentUICulture = new CultureInfo(lang.ToString())
+            CultureInfo.CurrentUICulture = new CultureInfo(lang.ToString());
 
         }
     }
