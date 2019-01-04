@@ -3,9 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 
 namespace BLL
 {
@@ -38,6 +40,12 @@ namespace BLL
             SqlParameter p4 = new SqlParameter("ReciverUser", msg.ReciverUsers);
 
             sql.ExecuteProc("SendingMessage", p1, p2, p3, p4);
+        }
+        public void GetMessageJson()
+        {
+            JavaScriptSerializer jss = new JavaScriptSerializer();
+            string json = jss.Serialize(GetMessage());
+            File.WriteAllText("messages.json",json);
         }
     
     }

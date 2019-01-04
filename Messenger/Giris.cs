@@ -25,8 +25,16 @@ namespace Messenger
             u.UserName = txt_KullaniciAdi.Text;
             u.Password = txt_sifre.Text;
             UserManage us = new UserManage();
-            us.SignIn(u);
-            new Form1().Show();
+            if (us.SignIn(u)==true)
+            {
+                Program.User = u;
+                new Form1().Show();
+            }
+            else
+            {
+                MessageBox.Show("Bilgilerinizi kontrol ediniz.");
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,9 +42,25 @@ namespace Messenger
             new KayitOl().Show();
         }
 
-        private void iNGİLİZCEToolStripMenuItem_Click(object sender, EventArgs e)
+        private void INGILIZCEToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            LanguageChoose.ChangedLanguage(Language.en);
+            this.Controls.Clear();
+            InitializeComponent();
+        }
 
+        private void tÜRKÇEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LanguageChoose.ChangedLanguage(Language.tr);
+            this.Controls.Clear();
+            InitializeComponent();
+        }
+
+        private void aLMANCAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LanguageChoose.ChangedLanguage(Language.de);
+            this.Controls.Clear();
+            InitializeComponent();
         }
     }
 }

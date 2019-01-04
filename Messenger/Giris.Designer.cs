@@ -88,41 +88,43 @@
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dİLToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // dİLToolStripMenuItem
             // 
-            resources.ApplyResources(this.dİLToolStripMenuItem, "dİLToolStripMenuItem");
             this.dİLToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tÜRKÇEToolStripMenuItem,
             this.iNGİLİZCEToolStripMenuItem,
             this.aLMANCAToolStripMenuItem});
             this.dİLToolStripMenuItem.Name = "dİLToolStripMenuItem";
+            resources.ApplyResources(this.dİLToolStripMenuItem, "dİLToolStripMenuItem");
             // 
             // tÜRKÇEToolStripMenuItem
             // 
-            resources.ApplyResources(this.tÜRKÇEToolStripMenuItem, "tÜRKÇEToolStripMenuItem");
             this.tÜRKÇEToolStripMenuItem.Name = "tÜRKÇEToolStripMenuItem";
+            resources.ApplyResources(this.tÜRKÇEToolStripMenuItem, "tÜRKÇEToolStripMenuItem");
+            this.tÜRKÇEToolStripMenuItem.Click += new System.EventHandler(this.tÜRKÇEToolStripMenuItem_Click);
             // 
             // iNGİLİZCEToolStripMenuItem
             // 
-            resources.ApplyResources(this.iNGİLİZCEToolStripMenuItem, "iNGİLİZCEToolStripMenuItem");
             this.iNGİLİZCEToolStripMenuItem.Name = "iNGİLİZCEToolStripMenuItem";
-            this.iNGİLİZCEToolStripMenuItem.Click += new System.EventHandler(this.iNGİLİZCEToolStripMenuItem_Click);
+            resources.ApplyResources(this.iNGİLİZCEToolStripMenuItem, "iNGİLİZCEToolStripMenuItem");
+            this.iNGİLİZCEToolStripMenuItem.Click += new System.EventHandler(this.INGILIZCEToolStripMenuItem_Click);
             // 
             // aLMANCAToolStripMenuItem
             // 
-            resources.ApplyResources(this.aLMANCAToolStripMenuItem, "aLMANCAToolStripMenuItem");
             this.aLMANCAToolStripMenuItem.Name = "aLMANCAToolStripMenuItem";
+            resources.ApplyResources(this.aLMANCAToolStripMenuItem, "aLMANCAToolStripMenuItem");
+            this.aLMANCAToolStripMenuItem.Click += new System.EventHandler(this.aLMANCAToolStripMenuItem_Click);
             // 
             // pic_kullaniciresim
             // 
-            resources.ApplyResources(this.pic_kullaniciresim, "pic_kullaniciresim");
             this.pic_kullaniciresim.BackgroundImage = global::Messenger.Properties.Resources.msn1;
+            resources.ApplyResources(this.pic_kullaniciresim, "pic_kullaniciresim");
             this.pic_kullaniciresim.Name = "pic_kullaniciresim";
             this.pic_kullaniciresim.TabStop = false;
             // 
