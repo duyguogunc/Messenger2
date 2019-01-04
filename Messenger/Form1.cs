@@ -17,11 +17,12 @@ namespace Messenger
         {
             InitializeComponent();
         }
+        Entity.Models.Message m = new Entity.Models.Message();
+        MessageManager mm = new MessageManager();
 
         private void btn_Gonder_Click(object sender, EventArgs e)
         {
-            Entity.Models.Message m = new Entity.Models.Message();
-            MessageManager mm = new MessageManager();
+
             m.Content = rch_GidenYazi.Text;
             m.User = Program.User;
             mm.InsertMessage(m);
@@ -29,10 +30,28 @@ namespace Messenger
 
 
         }
+        public void GetMessage()
+        {
+            flowLayoutPanel1.Controls.Clear();
+            var gelen = mm.GetMessage();
 
-        private void rch_GelenYazi_TextChanged(object sender, EventArgs e)
+            foreach (var item in gelen)
+            {
+                Label l = new Label();
+                l.Text = item.Content;
+                flowLayoutPanel1.Controls.Add(l);
+
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            GetMessage();
         }
 
         private void Form1_Load(object sender, EventArgs e)
