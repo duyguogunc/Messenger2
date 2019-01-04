@@ -19,6 +19,7 @@ namespace BLL
         {
             List<Message> messageList = new List<Message>();
             DataTable dt = sql.GetAllMessage("Select * From Messages");
+            
             foreach (DataRow item in dt.Rows)
             {
                 Message message = new Message();
@@ -37,7 +38,7 @@ namespace BLL
             SqlParameter p1 = new SqlParameter("Message", msg.Content);
             SqlParameter p2 = new SqlParameter("Date", msg.SendDate);
             SqlParameter p3 = new SqlParameter("SenderUser", msg.User.UserName);
-            SqlParameter p4 = new SqlParameter("ReciverUser", msg.ReciverUsers);
+            SqlParameter p4 = new SqlParameter("ReceiverUser", msg.ReciverUsers);
 
             sql.ExecuteProc("SendingMessage", p1, p2, p3, p4);
         }
